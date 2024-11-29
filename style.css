@@ -1,0 +1,382 @@
+*{
+    padding:0; margin:0;
+    box-sizing:border-box;
+    font-family:calibri;
+    text-decoration:none;
+    color:white;
+}
+html,body{
+    width:100%;
+    height:100%;
+    scroll-behavior: smooth;
+}
+
+
+
+html::-webkit-scrollbar{
+width:0.8rem;    
+}
+html::-webkit-scrollbar-track{
+background:#202026;    
+}
+html::-webkit-scrollbar-thumb{
+background:#0BCEAF;
+border-radius:8rem;  
+}
+
+
+
+.main{
+    width:100%;
+    height:100%;
+}
+.navbar{
+    position:fixed;
+    padding:0 25%;
+    gap:1vw;
+    width:100%;
+    height:60px;
+    background-color: transparent;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0e806d;
+    z-index:10;
+}
+.navbar a{
+color:rgb(255, 255, 255);
+font-size:1.5vw;
+font-weight:bold;
+transition:all .4s ease;
+border-bottom: 1px solid transparent;
+}
+.navbar a:hover{
+    border-bottom:1px solid white;
+    font-size:1.6vw;
+}
+
+
+/* scetion coding start from here */
+
+.Home{
+    width:100%;
+    height:100vh;
+    background: url(https://showmeinstitute.org/sites/default/files/teacher_shutterstock.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+}
+span{
+    font-weight:bold;
+    background-color: #0BCEAF;
+    padding:5px;
+    border-radius:10px 10px 10px 0px;
+    font-size:1.5vw;
+    color:white;
+}
+.content{
+    padding:10%;
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:20vw;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.right h1{
+    line-height: 2;
+    color:white;
+    font-size:4vw;
+}
+.right #element{
+    color:white;
+    font-size:2.5vw;
+    font-weight:400;
+}
+.left .image{
+    width:400px;
+    height:400px;
+    border:3px dotted white;
+    transform: rotate(-10deg);
+    border-radius:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.image img{
+    width:100%;
+    height:100%;
+    object-fit:contain; 
+}
+
+/* about section coding start  */
+
+.About{
+    width:100%;
+    height:70vh;
+    background-color: #202026;
+    padding:5vw 10vw;
+    display: flex;
+    gap:5vw;
+}
+.logodiv img{
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+.logodiv img:hover{
+scale:1.1;
+}
+.textdiv{
+    text-align: center;
+    color:white;
+}
+.textdiv h1{
+    line-height:2;
+    font-size:3vw;
+}
+.textdiv p{
+    padding:10px;
+    font-size:2vw;
+}
+.textdiv h4{
+    text-decoration: underline;
+    font-size:2vw;
+    line-height:3;
+    color:#0BCEAF;
+}
+.textdiv .hobbiesdiv{
+    display: flex;
+    justify-content: center;
+    gap:1vw;
+}
+.textdiv .hobbiesdiv p{
+    font-size:1.5vw;
+    border:1px solid rgb(0, 255, 217);
+    padding:5px;
+    border-radius: 5px;
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+.textdiv .hobbiesdiv p:hover{
+    background-color:#0BCEAF;
+}
+
+
+
+/* educational coding start from here  */
+
+
+.educational{
+    width:100%;
+    height:100vh;
+    background-color: #202026;
+    padding:5vw 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:3vw;
+}
+.text{
+    font-size:3vw;
+    color:white;
+    font-weight:bold;
+}
+table{
+    padding:10px;
+    font-size: 2vw;;
+    text-align: center;
+    color:white;
+}
+table , tr , th ,td{
+    border-radius:20px;
+}
+table tr th{
+    background-color:#0BCEAF;
+}
+
+
+/* family details Coding start from here  */
+
+
+.family{
+    width:100%;
+    background-color: #202026;
+    padding:5vw 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:3vw;    
+}
+.family .head{
+    font-size:3.5vw;
+}
+.family .details{
+    width:100%;
+    display:flex;
+    gap:1vmin;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.details .father{
+    width:30%;
+    border:3px solid #0BCEAF;
+    border-radius:20px;
+    display:flex;
+    flex: 1 1 45rex;
+    flex-direction: column;
+    gap:2vw;
+    align-items: center;
+    padding:2vw;
+}
+.father .top h1{
+color:#0BCEAF;
+font-size:3vw;
+}
+.father .bottom h3{
+    font-size:2vw;
+    padding:10px 0px;
+}
+
+
+
+/* contact coding start from here  */
+
+.contact{
+    width:100%;
+    background-color: #202026;
+    padding:5vw 10vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:3vw;      
+}
+.contact h1{
+    font-size:4vw;
+}
+
+
+
+/* Making Responsive  */
+
+
+@media only screen and (max-width:900px){
+
+.Home{
+height:100vh;
+}
+.content{
+    padding:2vmin;
+    height:auto;
+    gap:2vw;
+    flex-direction: column;
+}
+.right h1{
+    font-size:6vw;
+}
+.left .image{
+    width:50vmin;
+    height:50vmin;
+}
+.About{
+    height:auto;
+    padding:3vw 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:3vw;    
+}
+.About .logodiv img{
+    width:50vmin;;
+}
+.About .textdiv h1{
+    font-size:6vw;
+}
+.About .textdiv h4{
+    line-height:2;
+    font-size:5vw;
+}
+.About .textdiv p{
+    font-size:3vw;
+}
+.educational{
+    justify-content: center;
+}
+.educational .text{
+    font-size:5vmin;
+}
+.educational table{
+font-size:4vmin;
+width:100%;
+height:600px;
+}
+.educational table td{
+    padding:10px;
+}
+.family .head{
+    font-size:6vmin;
+}
+.details .father .top h1{
+ font-size:5vmin;
+}
+.details .father .bottom h3{
+    font-size:5vmin;
+}
+.contact .map{
+    width:100%;
+    padding:5vw;
+    background-color:#0BCEAF;
+    border-radius:20px;
+}
+.contact h1{
+    font-size:5vmin;
+}
+.contact iframe{
+    border-radius: 20px;
+    width:40vmin;
+    height:40vmin;
+}
+}
+     
+@media only screen and (max-width:400px){
+
+.navbar{
+    padding:3vmin;
+} 
+.navbar a{
+    font-size:3vw;
+}
+.About .logodiv img{
+    width:60vmin;;
+}
+.About .textdiv h1{
+    font-size:7vw;
+}
+.About .textdiv h4{
+    line-height:2;
+    font-size:7vw;
+}
+.About .textdiv p{
+    font-size:4.5vw;
+}
+.content .right span{
+    font-size:5vmin;
+}
+.content .right h1{
+    font-size:10vmin;
+}
+.content .right #element{
+    font-size:8vmin;
+}
+.educational table{
+    font-size:4vmin;
+    width:100%;
+    height:500px;
+}
+.educational table td{
+    padding:10px;
+}
+
+}
